@@ -6,9 +6,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Prabesh Maharjan | MIT Blogs',
+  title: 'MIT Blogs | Prabesh Maharjan',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  // favicon: 'img/p-m-website-favicon-color.png',
+  favicon: 'img/p-m-high-resolution-logo-color-on-transparent-background.png',
 
   // Set the production url of your site here
   url: 'https://mit.prabeshmaharjan.com.np',
@@ -29,7 +30,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'np'],
+    locales: ['en'],
   },
 
   presets: [
@@ -39,21 +40,13 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/prabeshmrz/prabesh-maharjan-mit-blogs/',
+            'https://github.com/prabeshmrz/prabesh-maharjan-mit-blogs/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/prabeshmrz/prabesh-maharjan-mit-blogs/',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
+        blog: false,
       }),
     ],
   ],
@@ -67,7 +60,7 @@ const config = {
         title: 'Prabesh Maharjan',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/p-m-high-resolution-logo-color-on-transparent-background.png',
         },
         items: [
           {
